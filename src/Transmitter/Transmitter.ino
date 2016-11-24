@@ -7,6 +7,7 @@
 const int armSwitch = 2;
 const int inputPin = 3;
 const int transmitPin = 4;
+const int timeBetweenCheck = 500;
 
 void setup() {
   pinMode(armSwitch, INPUT);
@@ -24,7 +25,7 @@ void loop() {
       transmit(false);
     }
   }
-  delay(500);
+  delay(timeBetweenCheck);
 }
 
 void transmit(bool state) {
