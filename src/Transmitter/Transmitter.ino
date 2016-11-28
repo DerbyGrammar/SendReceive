@@ -31,6 +31,7 @@ void loop() {
     }
     lastTime = millis();
   }
+  delay(50); //stability
 }
 
 void transmit(bool state) {
