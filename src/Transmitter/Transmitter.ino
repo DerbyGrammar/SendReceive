@@ -1,7 +1,7 @@
 /*
- * Derby Grammar
- * Transmittor - SendRecieve
- */
+   Derby Grammar
+   Transmittor - SendRecieve
+*/
 #include <VirtualWire.h>
 
 const int armSwitch = 2;
@@ -19,17 +19,17 @@ void setup() {
 }
 
 void loop() {
-  if(curtTime - lastTime => timeBetweenCheck) {
+  if (curtTime - lastTime => timeBetweenCheck) {
     bool armState = digitalRead(armSwitch);
     bool inputState = digitalRead(inputPin);
-    if(armSwitch == HIGH) {
-      if(inputState == HIGH) {
-        transmit(true);    
+    if (armSwitch == HIGH) {
+      if (inputState == HIGH) {
+        transmit(true);
       } else {
         transmit(false);
       }
     }
-  lastTime = millis();
+    lastTime = millis();
   }
 }
 
